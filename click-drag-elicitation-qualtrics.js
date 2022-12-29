@@ -323,7 +323,8 @@ function update_bins(point, remove) {
         var linear_y = y0;
 
       }
-
+      
+      linear_y = Math.round(linear_y / yPrecision) * yPrecision; // rounded also interpolated bins
 
     }
     updatebins.push(linear_y);
